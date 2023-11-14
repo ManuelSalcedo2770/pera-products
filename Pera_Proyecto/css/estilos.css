@@ -605,10 +605,7 @@ card .card-title {
   background: #f6f6f6;
   border-radius: 24px 24px 24px 48px;
   padding: 48px 48px 48px 308px;
-<<<<<<< HEAD
   /*top right bottom left card-1*/
-=======
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
   margin: 84px 0;
   width: 60vw;
   max-width: 920px;
@@ -655,24 +652,13 @@ card .card-title {
     left: 24px;
     overflow: hidden;
     border-radius: 24px;
-<<<<<<< HEAD
     box-shadow: 2px 6px 12px fade(black, 25%);
-=======
-    box-shadow:
-      2px 6px 12px fade(black, 25%);
-
-
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
   }
 
   &:nth-of-type(odd) {
     margin: 0 0 0 248px;
     border-radius: 24px 24px 48px 24px;
-<<<<<<< HEAD
     padding: 48px 308px 48px 48px;
-=======
-    padding: 48px 308px 48px 60px;
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
 
     .visual {
       right: 24px;
@@ -692,14 +678,6 @@ article {
   width: calc(60vw + 248px);
   max-width: calc(920px + 248px);
   min-width: calc(640px + 248px);
-<<<<<<< HEAD
-=======
-}
-
-.body-product {
-  margin: 0;
-  padding: 96px;
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
   font-size: 21px;
   background: var(--gris-claro, #E0E0E0);
   color: #000;
@@ -708,10 +686,6 @@ article {
   font-style: normal;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
 @media all and (max-width:1100px) {
   body {
     padding: 96px 48px 24px
@@ -755,13 +729,6 @@ article {
     }
 
     .text-content {
-<<<<<<< HEAD
-=======
-      h3 {
-        max-width: calc(100% - 150px);
-        font-size: 1em
-      }
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
 
       p,
       a {
@@ -769,38 +736,26 @@ article {
       }
     }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
     .visual,
     &:nth-of-type(odd) .visual {
       width: 150px;
       height: 150px;
-<<<<<<< HEAD
       right: auto;
-=======
-      right: 16px;
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
       left: auto;
 
       img {
         width: 100%;
-<<<<<<< HEAD
         height: 100%;
         display: block;
         margin: 0 auto;
         object-fit: cover;
-=======
-        height: auto
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
       }
     }
   }
 }
 
-<<<<<<< HEAD
 .custom-btn {
   border-width: 2px;
   border-radius: 10px;
@@ -827,8 +782,6 @@ article {
   margin: 0 0px 0 150px;
 }
 
-=======
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
 html {
   box-sizing: border-box;
 }
@@ -1763,11 +1716,6 @@ button.swiper-pagination-bullet {
 /*----------CARROUSEL----------------------------------------------------------------------------*/
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> f648f4d541c3633d4ea06e315c72a20f9f16d6da
 /*----------INICIO FOOTER------------------------------------------------------------------------*/
 
 .site-footer {
