@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
 <head>
     <meta charset="utf-8">
@@ -92,48 +94,132 @@
         <!-- FIN DE INICIO -->
         <br>
         <!--INICIO DE CARRUSEL-->
-        <div class="product-carrousel">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-img">
-                            <img src="https://images.unsplash.com/photo-1543335785-8aadf6d8183c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
-                                alt="">
-                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                                preserveAspectRatio="none">
-                                <path
-                                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                                    opacity=".25" class="shape-fill"></path>
-                                <path
-                                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                                    opacity=".5" class="shape-fill"></path>
-                                <path
-                                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                                    class="shape-fill"></path>
-                            </svg>
-                        </div>
-                        <div class="swiper-slide-content">
-                            <div>
-                                <h2>louvre</h2>
-                                <p>National art museum in Paris, France. It is located on the Right Bank of the Seine in
-                                    the city's 1st arrondissement (district or ward) and home to some of the most
-                                    canonical works of Western art, including the Mona Lisa and the Venus de Milo.</p>
-                                <a class="show-more" href="https://en.wikipedia.org/wiki/Louvre" target="_blank"><svg
-                                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
-                                    </svg></a>
+        <div class="swiper">
+            <div class="page-wrap">
+
+                <div id="home-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-one">
+                                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                                    <div class="swiper-image-inner swiper-image-left swiper-image-one">
+                                        <h1>A <span class="emphasis">Breath</span>. <br><span>Of Fresh Air.</span></h1>
+                                        <p>Chapter I, page XV</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-image" data-swiper-parallax-y="35%">
+                                    <div class="swiper-image-inner swiper-image-right swiper-image-two">
+                                        <p class="paragraph">
+                                            A Prophet sat in the market-place and told the fortunes of all who cared to
+                                            engage his services. Suddenly there came running up one who told him that
+                                            his
+                                            house had been broken into by thieves, and that they had made off with
+                                            everything they could lay
+                                            hands on.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-two">
+                                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                                    <div class="swiper-image-inner swiper-image-left swiper-image-three">
+                                        <h1>The <span class="emphasis">Drop</span>. <br><span>Of Eternal life.</span>
+                                        </h1>
+                                        <p>Chapter II, page VII</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-image" data-swiper-parallax-y="35%">
+                                    <div class="swiper-image-inner swiper-image-right swiper-image-four">
+                                        <p class="paragraph">
+                                            A thirsty Crow found a Pitcher with some water in it, but so little was
+                                            there
+                                            that, try as she might, she could not reach it with her beak, and it seemed
+                                            as
+                                            though she would die of thirst within sight of the remedy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-three">
+                                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                                    <div class="swiper-image-inner swiper-image-left swiper-image-five">
+                                        <h1>A <span class="emphasis">Sense</span>. <br><span>Of Things to Come.</span>
+                                        </h1>
+                                        <p>Chapter III, page XI</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-image" data-swiper-parallax-y="35%">
+                                    <div class="swiper-image-inner swiper-image-right swiper-image-six">
+                                        <p class="paragraph">
+                                            Every man carries Two Bags about with him, one in front and one behind, and
+                                            both
+                                            are packed full of faults. The Bag in front contains his neighbours’ faults,
+                                            the
+                                            one behind his own. Hence it is that men do not see their own faults, but
+                                            never
+                                            fail to see
+                                            those of others.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!--FIN DE CARRUSEL-->
 
+        <!--INICIO DE TENDENCIAS-->
+        <div class="product-heading">Tendencias</div>
+        <br>
+        <article>
+            <section class="card">
+                <div class="text-content">
+                    <div class="title-card-2">El Futuro de Pera</div>
+                    <p> Explora cómo Pera está liderando el camino hacia el futuro tecnológico con innovaciones
+                        vanguardistas y productos revolucionarios,
+                        allanando el camino hacia una era aún más prometedora.</p>
+                    <button type="button" class="btn btn-outline-dark custom-btn">CONOCE MÁS > </button>
+                </div>
+                <div class="visual">
+                    <img src="https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="text-content">
+                    <div class="title-card-1">Diseño y Estilo</div>
+                    <p>Adéntrate en el fascinante universo estético de Pera, donde la fusión perfecta entre forma y
+                        función redefine la experiencia
+                        tecnológica, estableciendo nuevos estándares en diseño sofisticado.</p>
+                    <button type="button" class="btn btn-outline-dark custom-btn">CONOCE MÁS > </button>
+                </div>
+                <div class="visual">
+                    <img src="https://images.unsplash.com/photo-1680384648202-745b088b4178?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="text-content">
+                    <div class="title-card-2">Compromiso ambiental</div>
+                    <p>Descubre cómo Pera lidera la revolución verde en la tecnología,
+                        destacándose por su compromiso ambiental y prácticas innovadoras de sostenibilidad.</p>
+                    <button type="button" class="btn btn-outline-dark custom-btn">CONOCE MÁS > </button>
+                </div>
+                <div class="visual">
+                    <img src="https://images.unsplash.com/photo-1689514930640-123c5f55ed09?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" />
+                </div>
+            </section>
+        </article>
+        <br>
+        <!--FIN DE TENDENCIAS-->
     </main>
+
     <!--INICIO FOOTER-->
     <footer class="site-footer">
         <div class="container">
@@ -169,7 +255,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
                         <a href="#">Pera</a>.
                     </p>
                 </div>
@@ -191,7 +277,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="F:\Pera_Proyecto\js\javascript.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            direction: "vertical",
+            loop: true,
+            pagination: ".swiper-pagination",
+            grabCursor: true,
+            speed: 1000,
+            paginationClickable: true,
+            parallax: true,
+            autoplay: false,
+            effect: "slide",
+            mousewheel: {
+                invert: false, // Puedes ajustar esto según tus necesidades
+            }
+        });
+
+    </script>
+
+
 </body>
 
 </html>
