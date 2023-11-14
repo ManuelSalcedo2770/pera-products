@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Pera</title>
-        <!-- ctrl+corchete de cierre    BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- ctrl+corchete de cierre    BOOTSTRAP -->
-        <link rel="stylesheet" href="css/estilos.css">
-    
-        <!--FUENTES-->
-        <link href="https://fonts.googleapis.com/css?family=Handjet&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet" />
-    </head>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pera</title>
+    <!-- ctrl+corchete de cierre    BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ctrl+corchete de cierre    BOOTSTRAP -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--FUENTES-->
+    <link href="https://fonts.googleapis.com/css?family=Handjet&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet" />
+</head>
+
 <body>
 
     <!--HEADER-->
@@ -23,8 +27,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-333">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="imag/drop.svg"
-                            class="logo" alt="pera"></a>
+                    <a class="navbar-brand" href="index.html"><img src="imag/drop.svg" class="logo" alt="pera"></a>
                     <div class="order-md-last iconos">
                         <i class="bi bi-heart-fill" href="deseos.html"></i>
                         <i class="bi bi-cart-fill" href="carrito.html"></i>
@@ -54,63 +57,163 @@
     <br>
 
     <main>
+        <!-- Page Wrap -->
+        <div class="swiper">
+            <div class="page-wrap">
+
+                <div id="home-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-one">
+                                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                                    <div class="swiper-image-inner swiper-image-left swiper-image-one">
+                                        <h1>A <span class="emphasis">Breath</span>. <br><span>Of Fresh Air.</span></h1>
+                                        <p>Chapter I, page XV</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-image" data-swiper-parallax-y="35%">
+                                    <div class="swiper-image-inner swiper-image-right swiper-image-two">
+                                        <p class="paragraph">
+                                            A Prophet sat in the market-place and told the fortunes of all who cared to
+                                            engage his services. Suddenly there came running up one who told him that
+                                            his
+                                            house had been broken into by thieves, and that they had made off with
+                                            everything they could lay
+                                            hands on.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-two">
+                                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                                    <div class="swiper-image-inner swiper-image-left swiper-image-three">
+                                        <h1>The <span class="emphasis">Drop</span>. <br><span>Of Eternal life.</span>
+                                        </h1>
+                                        <p>Chapter II, page VII</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-image" data-swiper-parallax-y="35%">
+                                    <div class="swiper-image-inner swiper-image-right swiper-image-four">
+                                        <p class="paragraph">
+                                            A thirsty Crow found a Pitcher with some water in it, but so little was
+                                            there
+                                            that, try as she might, she could not reach it with her beak, and it seemed
+                                            as
+                                            though she would die of thirst within sight of the remedy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-three">
+                                <div class="swiper-image" data-swiper-parallax-y="-20%">
+                                    <div class="swiper-image-inner swiper-image-left swiper-image-five">
+                                        <h1>A <span class="emphasis">Sense</span>. <br><span>Of Things to Come.</span>
+                                        </h1>
+                                        <p>Chapter III, page XI</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-image" data-swiper-parallax-y="35%">
+                                    <div class="swiper-image-inner swiper-image-right swiper-image-six">
+                                        <p class="paragraph">
+                                            Every man carries Two Bags about with him, one in front and one behind, and
+                                            both
+                                            are packed full of faults. The Bag in front contains his neighbours’ faults,
+                                            the
+                                            one behind his own. Hence it is that men do not see their own faults, but
+                                            never
+                                            fail to see
+                                            those of others.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-        <!--INICIO FOOTER-->
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h6>PRODUCTOS</h6>
-                        <p class="text-justify">
-                        <ul> PeraPhone 2 </ul>
-                        <ul> PeraPhone 6 </ul>
-                        <ul> PeraPad 5 </ul>
-                        <ul> PeraEar </ul>
-                        </p>
-                    </div>
-    
-                    <div class="col-xs-6 col-md-3">
-                        <h6>FORMAS DE PAGO</h6>
-                        <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/category/c-language/">Visa</a></li>
-                            <li><a href="http://scanfcode.com/category/front-end-development/">MasterCard</a></li>
-                            <li><a href="http://scanfcode.com/category/back-end-development/">AMEX</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="col-xs-6 col-md-3">
-                        <h6>SUSCRÍBETE A PERA</h6>
-                        <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/about/">Envía un hola al correo pera@gmail.com</a></li>
-                        </ul>
-                    </div>
+    <!--INICIO FOOTER-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>PRODUCTOS</h6>
+                    <p class="text-justify">
+                    <ul> PeraPhone 2 </ul>
+                    <ul> PeraPhone 6 </ul>
+                    <ul> PeraPad 5 </ul>
+                    <ul> PeraEar </ul>
+                    </p>
                 </div>
-                <hr>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                            <a href="#">Pera</a>.
-                        </p>
-                    </div>
-    
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>FORMAS DE PAGO</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/c-language/">Visa</a></li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/">MasterCard</a></li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/">AMEX</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>SUSCRÍBETE A PERA</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/about/">Envía un hola al correo pera@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    
-        <!--FIN FOOTER-->
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                        <a href="#">Pera</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--FIN FOOTER-->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/Pera_Proyecto/js/javascriptcarrousel.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            direction: "vertical",
+            loop: true,
+            pagination: ".swiper-pagination",
+            grabCursor: true,
+            speed: 1000,
+            paginationClickable: true,
+            parallax: true,
+            autoplay: false,
+            effect: "slide",
+            mousewheel: {
+                invert: false, // Puedes ajustar esto según tus necesidades
+            }
+        });
+
+    </script>
+
+
 </body>
+
 </html>
