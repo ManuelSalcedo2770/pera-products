@@ -810,7 +810,7 @@ General Styles
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right bottom, #2a1f30 50%, #383d44 50%);
+  background: linear-gradient(to right bottom, #a2a2a2 50%, #cdcdcd 50%);
 }
 
 /* ====================================
