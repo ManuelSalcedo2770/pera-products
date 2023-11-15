@@ -637,6 +637,8 @@ body, html {
 
 .productos-inicio {
   height: 100%;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .productos-container {
@@ -688,9 +690,10 @@ body, html {
   position: absolute;
   z-index: 5;
   color: white;
-  font-size: 4em;
-  letter-spacing: 0.75em;
+  font-size: 4.3em;
+  letter-spacing: 0.85em;
   padding-left: 0.375em;
+  font-family: 'Handjet', sans-serif;
 }
 
 @media (max-width: 980px) {
@@ -1040,6 +1043,20 @@ article {
   font-size: x-large;
   width: 150px;
 }
+
+/* Modal Title */
+.modal-title {
+  font-size: 30px; /* Ajusta el tamaño del texto según tus preferencias */
+  font-weight: bold;
+  margin-bottom: 0; /* Elimina el margen inferior predeterminado */
+}
+
+/* Modal Body */
+.modal-body {
+  font-size: 20px; /* Ajusta el tamaño del texto según tus preferencias */
+  line-height: 1.5; /* Ajusta la altura de línea según tus preferencias */
+}
+
 
 .title-card-1 {
   max-width: calc(100% - 150px);

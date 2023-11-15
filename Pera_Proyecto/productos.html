@@ -81,11 +81,11 @@
                         <div class="button-container">
                             <button type="button" class="btn btn-outline-dark custom-btn">CONOCE MÁS > </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-2" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modaldeseos">
                                 <i class="bi bi-heart-fill"></i>
                             </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modalcarrito">
                                 <i class="bi bi-cart-fill"></i>
                             </button>
                         </div>
@@ -108,11 +108,11 @@
                         <div class="button-container">
                             <button type="button" class="btn btn-outline-dark custom-btn">CONOCE MÁS > </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-2" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modaldeseos">
                                 <i class="bi bi-heart-fill"></i>
                             </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modalcarrito">
                                 <i class="bi bi-cart-fill"></i>
                             </button>
                         </div>
@@ -136,11 +136,11 @@
                         <div class="button-container">
                             <button type="button" class="btn btn-outline-dark custom-btn">CONOCE MÁS > </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-2" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modaldeseos">
                                 <i class="bi bi-heart-fill"></i>
                             </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modalcarrito">
                                 <i class="bi bi-cart-fill"></i>
                             </button>
                         </div>
@@ -162,11 +162,11 @@
                         <div class="button-container">
                             <button type="button" class="btn btn-outline-dark custom-btn">CONOCE MÁS > </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-2" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modaldeseos">
                                 <i class="bi bi-heart-fill"></i>
                             </button>
                             <button type="button" class="btn btn-outline-dark custom-btn-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                                data-bs-target="#modalcarrito">
                                 <i class="bi bi-cart-fill"></i>
                             </button>
                         </div>
@@ -263,8 +263,8 @@
                 </section>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal deseos -->
+        <div class="modal fade" id="modaldeseos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -275,8 +275,27 @@
                         Este producto se agregó a tu Lista de Deseos exitosamente.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Entendido</button>
+                        <button type="button" class="btn btn-secondary custom-btn" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-outline-dark custom-btn" href="/Pera_Proyecto/deseos.html">Ir a Wishlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal carrito -->
+        <div class="modal fade" id="modalcarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Este producto se agregó a tu Carrito exitosamente.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary custom-btn" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-outline-dark custom-btn" href="/Pera_Proyecto/carrito.html">Ir a Carrito</button>
                     </div>
                 </div>
             </div>
@@ -289,7 +308,7 @@
 
         <br>
         <!-----------------------------CLOCK---------------------------->
-        <div class="header-text">>>>>>>>>>>>>> ESPERA LOS NUEVOS PRODUCTOS</div>
+        <div class="header-text">>>>> ESPERA LOS NUEVOS PRODUCTOS</div>
         <div class="body_clock">
             <div class="clock" role="img">
                 <div class="clock__digit" data-digit="0">
