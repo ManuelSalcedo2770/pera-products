@@ -329,6 +329,7 @@ card .card-title {
   font: 400 64px "Libre Barcode 39 Text", sans-serif;
   display: flex;
   align-items: left;
+  font-size: 8rem;
 }
 
 @media (max-width: 991px) {
@@ -486,11 +487,18 @@ card .card-title {
 }
 
 .body-product2 {
+  min-height: 100vh;
   height: 100vh;
   display:flex;
   place-items: auto;
   background-color: rgb(210, 210, 210);
   color: rgba(20, 20, 20, 0.85);
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Añade relleno al contenedor */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+
 }
 
 .main_PRODUCTS {
@@ -531,7 +539,11 @@ card .card-title {
   }
 }
 
-.tabs { position: center;}
+.tabs { 
+  position: center;
+  max-width: fit-content;
+  min-height: 100vh;
+}
 
 .tab {
   position: absolute;
@@ -588,11 +600,13 @@ card .card-title {
   100% {
     opacity: .8;
     transform: translateY(0);
+    max-height: 100vh;
   }
 }
 
 .tab-image {
   position: absolute;
+  max-height: 100vh;
   width: 900px;
   height: 550px;
   opacity: 0;
@@ -607,10 +621,17 @@ card .card-title {
   }
 
   & img {
+    min-width: auto;
     width: 900px;
     height: 550px;
     object-fit: cover;
     filter: grayscale(50%);
+  }
+}
+
+@media (max-width: 992px){
+  .tab{
+    width: 50%;
   }
 }
 
@@ -619,6 +640,25 @@ card .card-title {
     opacity: 1;
     width: 300px;
     transform: translateX(0);
+    max-height: 100vh;
+
+  }
+}
+
+@media (min-width: 100vh) {
+  .main_PRODUCTS header {
+    font-size: 2.5rem;
+    padding: 10px;  
+  }
+  .indexes {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 100vh) {
+  .tabs {
+    font-size: 2.5rem;
+    padding: 10px;  
   }
 }
 
@@ -689,7 +729,7 @@ body, html {
 .drop-shadow > span {
   position: absolute;
   z-index: 5;
-  color: white;
+  color: rgb(29, 29, 29);
   font-size: 4.3em;
   letter-spacing: 0.85em;
   padding-left: 0.375em;
@@ -711,7 +751,7 @@ body, html {
 
 @media (max-width: 640px) {
   .drop-shadow > span {
-    font-size: 2em;
+    font-size: 50px;
   }
 }
 
@@ -868,7 +908,6 @@ body, html {
 /*----------FIN CONTENIDO PRODUCTOS--------------------------------------------------------------*/
 .card {
   background: #f6f6f6;
-  border-radius: 24px 24px 24px 48px;
   padding: 48px 48px 48px 308px;
   /*top right bottom left card-1*/
   margin: 84px 0;
@@ -909,6 +948,7 @@ body, html {
     }
   }
 
+
   .visual {
     width: 240px;
     height: 100%;
@@ -917,19 +957,28 @@ body, html {
     left: 24px;
     overflow: hidden;
     border-radius: 24px;
-    box-shadow: 2px 6px 12px fade(black, 25%);
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.25);
+  }
 
-    img {
-      width: 100%;
+    .visual img {
+      width: auto;
       height: 100%;
-      object-fit: cover;
+      object-fit:contain;
     }
+
+  
+
+  
+
+  .body-product .visual {
+    width: 1000px;
+    height: 1000px;
+
 
   }
 
   &:nth-of-type(odd) {
     margin: 0 0 0 248px;
-    border-radius: 24px 24px 48px 24px;
     padding: 48px 308px 48px 48px;
 
     .visual {
@@ -1124,27 +1173,27 @@ Home Slider
 }
 
 .swiper-image-one {
-  background-image: url(https://source.unsplash.com/GXOGGENgHnQ/1600x900);
+  background-image: url(https://images.unsplash.com/photo-1498049860654-af1a5c566876?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .swiper-image-two {
-  background-image: url(https://source.unsplash.com/Jy6luiLBsrk/1600x900);
+  background-image: url(https://images.unsplash.com/photo-1511140973288-19bf21d7e771?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .swiper-image-three {
-  background-image: url(https://source.unsplash.com/sFLVTqNzG2I/1600x900);
+  background-image: url(https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?q=80&w=2328&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .swiper-image-four {
-  background-image: url(https://source.unsplash.com/pj1jt4vBGZY/1600x900);
+  background-image: url(https://images.unsplash.com/photo-1593359863503-f598684c806f?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .swiper-image-five {
-  background-image: url(https://source.unsplash.com/Jy6luiLBsrk/1600x900);
+  background-image: url(https://images.unsplash.com/photo-1495510096779-5fbe73258c83?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .swiper-image-six {
-  background-image: url(https://source.unsplash.com/bxCgan0J1Sg/1600x900);
+  background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .swiper-image {
@@ -1170,9 +1219,9 @@ Home Slider
 }
 
 .swiper-image-left {
-  filter: sepia(100%);
+  filter: sepia(10%);
   transition: all 1s linear;
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 .swiper-slide.swiper-slide-active .swiper-image-left {
@@ -1188,12 +1237,12 @@ Home Slider
 }
 
 h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'VT323', serif;
   font-weight: 500;
   color: #fff;
   align-self: flex-start;
   margin: 0 0 auto 0;
-  font-size: 4.5rem;
+  font-size: 5rem;
   line-height: 1;
   transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.1s;
   transform: translate3d(-20%, 0, 0);
@@ -1202,7 +1251,6 @@ h1 {
 
 h1 span.emphasis {
   font-weight: 700;
-  font-style: italic;
   opacity: 0;
   transition: all .8s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s;
   transform: translate3d(-20%, 0, 0);
@@ -1210,12 +1258,12 @@ h1 span.emphasis {
 }
 
 h1 span:not(.emphasis) {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 h1+p {
-  font-family: 'Cormorand SC';
-  font-size: 14px;
+  font-family: 'VT323';
+  font-size: 2rem;
   letter-spacing: 2px;
   margin: 0;
   line-height: 1;
@@ -1230,18 +1278,28 @@ h1+p {
   padding-right: 8rem;
 }
 
-p.paragraph {
+.paragraph {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Tomorrow', sans-serif;
   color: #fff;
   width: 100%;
   max-width: 350px;
-  text-align: justify;
-  font-size: 1.2rem;
+  text-align: left;
+  font-size: 2rem;
   font-weight: 500;
   opacity: 0;
   transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
   transform: translate3d(-20%, 0, 0);
+}
+
+span{
+  font-family: 'VT323', sans-serif;
+  font-size: 4rem;
+}
+
+span.emphasis{
+  font-family: 'VT323', sans-serif;
+  font-size: 6rem;
 }
 
 .swiper-slide.swiper-slide-active .swiper-image-right {
