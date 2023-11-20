@@ -427,7 +427,6 @@ card .card-title {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tomorrow", sans-serif;
 }
 
 .product-carrousel {
@@ -2097,27 +2096,20 @@ button.swiper-pagination-bullet {
 
 
 /*------------------------------CARRITO----------------------------------------------------------*/
-@import "compass/reset";
-@import "compass/css3";
-
-
-@mixin transition($transition-property, $transition-time, $method) {
-  -webkit-transition: #{$transition-property} #{$transition-time} #{$method};
-  -moz-transition: #{$transition-property} #{$transition-time} #{$method};
-  -ms-transition: #{$transition-property} #{$transition-time} #{$method};
-  -o-transition: #{$transition-property} #{$transition-time} #{$method};
-  transition: #{$transition-property} #{$transition-time} #{$method};
-}
 
 * {
   box-sizing: border-box;
 }
 
-
-img {
-  max-width: 100%;
+.wrap .cf {
+  color: black;
+  background: var(--gris-claro, #E0E0E0);
+  font-family: 'Handjet', sans-serif;
 }
 
+.cartSection .img {
+  max-width: 100%;
+}
 .cf:before,
 .cf:after {
   content: " ";
@@ -2138,28 +2130,40 @@ img {
 
 .projTitle {
   font-family: 'VT323', sans-serif;
+  font-weight: bold;
   text-align: center;
   font-size: 2em;
 
-  span {
-    font-family: 'Tomorrow', serif;
-    font-weight: Regular;
+  .span {
+    font-family: 'Droid Serif', serif;
+    font-weight: normal;
     font-style: italic;
+    text-transform: lowercase;
     color: #777;
   }
 }
 
 /* CART HEADER */
+.heading {
+  padding: 1em 0;
+  border-bottom: 1px solid #D0D0D0;
+}
 
+h1 {
+  font-family: 'Droid Serif', serif;
+  font-size: 2em;
+  float: left;
+}
 
 a.continue {
   text-decoration: none;
-  font-family: 'Handjet', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.015em;
   font-size: 0.75em;
   padding: 1em;
   color: #fff;
   background: #000000;
+  font-weight: bold;
   border-radius: 50px;
   float: right;
   text-align: right;
@@ -2188,7 +2192,7 @@ a.continue {
 .tableHead {
   display: table;
   width: 100%;
-  font-family: 'Handjet', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.75em;
 
   li {
@@ -2234,7 +2238,8 @@ a.continue {
 
       h3 {
         font-size: 1em;
-        font-family: 'Tomorrow', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.025em;
       }
@@ -2243,14 +2248,16 @@ a.continue {
         display: inline-block;
         font-size: 0.85em;
         color: #777777;
-        font-family: 'Tomorrow', sans-serif;
+        font-family: 'Montserrat', sans-serif;
 
         .quantity {
+          font-weight: bold;
           color: #333;
         }
 
         &.stockStatus {
           color: #82CA9C;
+          font-weight: bold;
           padding: 0.5em 0 0 1em;
           text-transform: uppercase;
 
@@ -2266,12 +2273,12 @@ a.continue {
         height: auto;
       }
 
-
       &.qtyWrap,
       &.prodTotal {
         text-align: center;
 
         p {
+          font-weight: bold;
           font-size: 1.25em;
         }
       }
@@ -2295,7 +2302,7 @@ a.continue {
 
 .special {
   display: block;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   .specialContent {
     padding: 1em 1em 0;
@@ -2308,15 +2315,16 @@ a.continue {
       font-size: 1.5em;
       margin-right: 1em;
       color: #6f6f6f;
-      font-family: 'Tomorrow', sans-serif;
+      font-family: 'Helvetica', 'Arial', sans-serif;
     }
   }
 }
 
 a.remove {
   text-decoration: none;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
+  font-weight: bold;
   background: #e0e0e0;
   padding: 0.5em;
   font-size: 0.75em;
@@ -2381,6 +2389,7 @@ a.remove {
     padding: 1em 3em;
     color: #fff;
     background: #336699;
+    font-weight: bold;
     border-radius: 50px;
     float: right;
     text-align: right;
@@ -2422,6 +2431,7 @@ a.remove {
 
     &.final {
       font-size: 1.25em;
+      font-weight: bold;
     }
 
     span {
@@ -2509,20 +2519,12 @@ a.btn.continue {
 }
 
 
-
 /*------------------------------DESEOS----------------------------------------------------------*/
 
-* {
+.deseos-container {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Handjet', sans-serif;
-}
-
-
-header span,
-header i {
-  color: #2B2D42;
 }
 
 .row {
@@ -2549,7 +2551,6 @@ header i {
   position: relative;
   flex: auto;
   color: #333;
-  background: #E0E0E0;
 }
 
 .product--blue {
@@ -2615,7 +2616,6 @@ header i {
 body {
   color: #333;
   background-color: #f0f0f0;
-  font-family: 'Handjet', sans-serif;
 }
 
 .projTitle {
@@ -2671,6 +2671,7 @@ a.continue:hover {
 }
 
 .subtotal .totalRow.final {
+  font-weight: bold;
   color: #333;
 }
 
@@ -2681,6 +2682,7 @@ a.continue:hover {
 .subtotal .totalRow a.btn.continue:hover {
   background: #993333;
 }
+
 
 
 
@@ -2837,12 +2839,12 @@ a.continue:hover {
   background-color: #00aced
 }
 
-.social-icons a.linkedin:hover {
-  background-color: #007bb6
+.social-icons a.instagram:hover {
+  background-color: #ea4c89
 }
 
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89
+.social-icons a.youtube:hover {
+  background-color: rgb(226, 48, 48)
 }
 
 @media (max-width:767px) {
