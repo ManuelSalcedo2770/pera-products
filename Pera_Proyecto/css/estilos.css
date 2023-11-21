@@ -2095,15 +2095,6 @@ button.swiper-pagination-bullet {
 
 
 /*------------------------------CARRITO----------------------------------------------------------*/
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
-@import "compass/reset";
-$fontSans : 'Montserrat',
-sans-serif;
-$fontSerif : 'Droid Serif',
-serif;
-
 
 @mixin transition($transition-property, $transition-time, $method) {
   -webkit-transition: $transition-property $transition-time $method;
