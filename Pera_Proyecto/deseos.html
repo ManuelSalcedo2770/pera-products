@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Pera</title>
-        <!-- ctrl+corchete de cierre    BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- ctrl+corchete de cierre    BOOTSTRAP -->
-        <link rel="stylesheet" href="css/estilos.css">
-    
-        <!--FUENTES-->
-        <link href="https://fonts.googleapis.com/css?family=Handjet&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet" />
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pera</title>
+    <!-- ctrl+corchete de cierre    BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ctrl+corchete de cierre    BOOTSTRAP -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--FUENTES-->
+    <link href="https://fonts.googleapis.com/css?family=Handjet&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet" />
+</head>
+
 <body>
 
     <!--HEADER-->
@@ -23,8 +25,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-333">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="imag/drop.svg"
-                            class="logo" alt="pera"></a>
+                    <a class="navbar-brand" href="index.html"><img src="imag/drop.svg" class="logo" alt="pera"></a>
                     <div class="order-md-last iconos">
                         <i class="bi bi-heart-fill active" aria-current="page" href="#deseos.html"></i>
                         <i class="bi bi-cart-fill" href="carrito.html"></i>
@@ -54,61 +55,191 @@
     <br>
 
     <main>
+        <header>
+            <ul>
+                <i class='fa fa-shopping-cart'>
+                    <span class='counter'></span>
+                </i>
+            </ul>
+        </header>
+        <div class='row deseos-container'>
+            <div class='product--blue'>
+                <div class='product_inner'>
+                    <img src='imag/PeraPadBlack.png' width='300'>
+                    <p>PeraPad Black</p>
+                    <p>Size 7</p>
+                    <p>Price $599.99</p>
+                    <button>Add to basket</button>
+                </div>
+                <div class='product_overlay'>
+                    <h2>Added to basket</h2>
+                    <i class='fa fa-check'></i>
+                </div>
+            </div>
+            <div class='product--orange'>
+                <div class='product_inner'>
+                    <img src='imag/PeraPhoneBlue.png' width='300'>
+                    <p>PeraPhone Blue</p>
+                    <p>Size 10</p>
+                    <p>Price $699.99</p>
+                    <button>Add to basket</button>
+                </div>
+                <div class='product_overlay'>
+                    <h2>Added to basket</h2>
+                    <i class='fa fa-check'></i>
+                </div>
+            </div>
+            <div class='product--red'>
+                <div class='product_inner'>
+                    <img src='imag/PeraPhoneSilver.png' width='300'>
+                    <p>PeraPhone Silver</p>
+                    <p>Size 8</p>
+                    <p>Price $799.99</p>
+                    <button>Add to basket</button>
+                </div>
+                <div class='product_overlay'>
+                    <h2>Added to basket</h2>
+                    <i class='fa fa-check'></i>
+                </div>
+            </div>
+            <div class='product--green'>
+                <div class='product_inner'>
+                    <img src='imag/PeraPods.png' width='300'>
+                    <p>PeraPods</p>
+                    <p>Size 11</p>
+                    <p>Price $149.99</p>
+                    <button>Add to basket</button>
+                </div>
+                <div class='product_overlay'>
+                    <h2>Added to basket</h2>
+                    <i class='fa fa-check'></i>
+                </div>
+            </div>
+            <div class='product--yellow'>
+                <div class='product_inner'>
+                    <img src='imag/PeraPadBlack.png' width='300'>
+                    <p>PeraPad Black</p>
+                    <p>Size 11</p>
+                    <p>Price $599.99</p>
+                    <button>Add to basket</button>
+                </div>
+                <div class='product_overlay'>
+                    <h2>Added to basket</h2>
+                    <i class='fa fa-check'></i>
+                </div>
+            </div>
+            <div class='product--pink'>
+                <div class='product_inner'>
+                    <img src='imag/PeraPhoneBlue.png' width='300'>
+                    <p>PeraPhone Blue</p>
+                    <p>Size 11</p>
+                    <p>Price $699.99</p>
+                    <button>Add to basket</button>
+                </div>
+                <div class='product_overlay'>
+                    <h2>Added to basket</h2>
+                    <i class='fa fa-check'></i>
+                </div>
+            </div>
+        </div>
     </main>
-        <!--INICIO FOOTER-->
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h6>PRODUCTOS</h6>
-                        <p class="text-justify">
-                        <ul> PeraPhone 2 </ul>
-                        <ul> PeraPhone 6 </ul>
-                        <ul> PeraPad 5 </ul>
-                        <ul> PeraEar </ul>
-                        </p>
-                    </div>
-    
-                    <div class="col-xs-6 col-md-3">
-                        <h6>FORMAS DE PAGO</h6>
-                        <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/category/c-language/">Visa</a></li>
-                            <li><a href="http://scanfcode.com/category/front-end-development/">MasterCard</a></li>
-                            <li><a href="http://scanfcode.com/category/back-end-development/">AMEX</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="col-xs-6 col-md-3">
-                        <h6>SUSCRÍBETE A PERA</h6>
-                        <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/about/">Envía un hola al correo pera@gmail.com</a></li>
-                        </ul>
-                    </div>
+
+    <!--INICIO FOOTER-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <h6>PRODUCTOS</h6>
+                    <p class="text-justify">
+                    <ul> PeraPhone 2 </ul>
+                    <ul> PeraPhone 6 </ul>
+                    <ul> PeraPad 5 </ul>
+                    <ul> PeraEar </ul>
+                    </p>
                 </div>
-                <hr>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                            <a href="#">Pera</a>.
-                        </p>
-                    </div>
-    
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <h6>FORMAS DE PAGO</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/c-language/">Visa</a></li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/">MasterCard</a></li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/">AMEX</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-4">
+                    <h6>SUSCRÍBETE A PERA</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/about/">Envía un hola al correo pera@gmail.com</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    
-        <!--FIN FOOTER-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Pera</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--FIN FOOTER-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+
+            "use strict"
+
+            var init = "No items yet!";
+            var counter = 0;
+
+            // Initial Cart
+            $(".counter").html(init);
+
+            // Add Items To Basket
+            function addToBasket() {
+                counter++;
+                $(".counter").html(counter).animate({
+                    'opacity': '0'
+                }, 300, function () {
+                    $(".counter").delay(300).animate({
+                        'opacity': '1'
+                    })
+                })
+            }
+
+            // Add To Basket Animation
+            $("button").on("click", function () {
+                addToBasket(); $(this).parent().parent().find(".product_overlay").css({
+                    'transform': ' translateY(0px)',
+                    'opacity': '1',
+                    'transition': 'all ease-in-out .45s'
+                }).delay(1500).queue(function () {
+                    $(this).css({
+                        'transform': 'translateY(-500px)',
+                        'opacity': '0',
+                        'transition': 'all ease-in-out .45s'
+                    }).dequeue();
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
