@@ -2522,103 +2522,6 @@ a.btn.continue {
   text-align: center;
 }
 
-
-
-
-/*------------------------------DESEOS----------------------------------------------------------*/
-
-
-.deseos-container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.row {
-  width: 100%;
-  justify-content: flex-start;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.product,
-.product--pink,
-.product--yellow,
-.product--green,
-.product--red,
-.product--orange,
-.product--blue {
-  box-shadow: 1px 5px 15px #CCC;
-  width: 15em;
-  height: auto;
-  border-radius: 3px;
-  padding: 2em;
-  margin: 1em;
-  overflow: hidden;
-  position: relative;
-  flex: auto;
-  color: #333;
-}
-
-.product--blue {
-  background: linear-gradient(-45deg, #ffffff 50%, rgba(0, 0, 0, 0.5) 50%);
-}
-
-.product--orange {
-  background: linear-gradient(-45deg, #ffffff 50%, rgba(0, 0, 0, 0.5) 50%);
-}
-
-.product--red {
-  background: linear-gradient(-45deg, #ffffff 50%, rgba(0, 0, 0, 0.5) 50%);
-}
-
-.product--green {
-  background: linear-gradient(-45deg, #ffffff 50%, rgba(0, 0, 0, 0.5) 50%);
-}
-
-.product--yellow {
-  background: linear-gradient(-45deg, #ffffff 50%, rgba(0, 0, 0, 0.5) 50%);
-}
-
-.product--pink {
-  background: linear-gradient(-45deg, #ffffff 50%, rgba(0, 0, 0, 0.5) 50%);
-}
-
-
-.product_inner h2,
-.product_inner p {
-  color: #333;
-  /* Cambiado a negro */
-}
-
-.product_inner button {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #FFF;
-  background: none;
-}
-
-.product_inner button:hover {
-  background: white;
-  color: #2B2D42;
-}
-
-.product_inner button:before {
-  color: #FFF;
-}
-
-.product_inner button:hover:before {
-  color: #2B2D42;
-}
-
-.product_overlay {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.product_overlay h2,
-.product_overlay i {
-  color: rgba(43, 45, 66, 0.7);
-}
-
 /* CARRITO CSS */
 body {
   color: #333;
@@ -2690,6 +2593,114 @@ a.continue:hover {
   background: #993333;
 }
 
+
+
+/*------------------------------DESEOS----------------------------------------------------------*/
+
+
+.deseos-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.deseos-container .row {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.product,
+.product-pink,
+.product-yellow,
+.product-green,
+.product-red,
+.product-orange,
+.product-blue {
+  box-shadow: 1px 5px 15px #CCC;
+  width: 15em;
+  height: auto;
+  border-radius: 3px;
+  padding: 2em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+  flex: auto;
+  color: #1f1e1e;
+}
+
+.product-blue, .product-orange, .product-red, .product-green, .product-yellow, .product-pink {
+  background: linear-gradient(-45deg, #ffffff 50%, rgba(167, 167, 167, 0.5) 50%);
+}
+
+.product-inner h2,
+.product-inner p {
+  color: #333;
+  /* Cambiado a negro */
+}
+
+.product-inner button {
+  width: 70%;
+  align-items: center;
+}
+
+.product-inner button:before {
+  color: #FFF;
+}
+
+.product-inner button:hover:before {
+  color: #2B2D42;
+}
+
+.product-overlay {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.product-overlay h2,
+.product-overlay i {
+  color: rgba(43, 45, 66, 0.7);
+}
+
+.product-inner .img {
+  max-width: 100%;
+  height: auto !important;
+  text-align: center;
+}
+
+.product-overlay {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-500px);
+  opacity: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+
+  i {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.5em;
+  }
+}
+
+
+
+
 /*----------FIN DESEOS------------------------------------------------------------------------*/
 
 
@@ -2702,9 +2713,9 @@ a.continue:hover {
 
 
 .custom-cart-title {
-  font-size: 24px; 
-  font-weight: 700; 
-  color: #333; 
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
   font-family: 'Handjet', sans-serif;
 }
 
@@ -2730,7 +2741,7 @@ a.continue:hover {
 .custom-table {
   table-layout: fixed;
   overflow-y: auto;
-  font-family: 'Tomorrow', sans-serif; 
+  font-family: 'Tomorrow', sans-serif;
 }
 
 .custom-th {
@@ -2794,20 +2805,20 @@ a.continue:hover {
 }
 
 .custom-table .custom-price {
-  font-size: 12px; 
-  font-family: 'Tomorrow', sans-serif; 
+  font-size: 12px;
+  font-family: 'Tomorrow', sans-serif;
   color: #555;
 }
 
 .custom-details-header {
   font-size: 30px;
   text-transform: uppercase;
-  font-family: 'VT323', sans-serif; 
+  font-family: 'VT323', sans-serif;
 }
 
 .custom-total {
-  font-size: 14px; 
-  font-family: 'Tomorrow', sans-serif; 
+  font-size: 14px;
+  font-family: 'Tomorrow', sans-serif;
   color: #555;
   text-align: right;
 }
