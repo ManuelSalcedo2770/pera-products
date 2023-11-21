@@ -30,8 +30,13 @@
                     <a class="navbar-brand active" aria-current="page" href="#index.html"><img src="imag/drop.svg"
                             class="logo" alt="pera"></a>
                     <div class="order-md-last iconos">
-                        <i class="bi bi-heart-fill" href="deseos.html"></i>
-                        <i class="bi bi-cart-fill" href="carrito.html"></i>
+                        <button class="btn custom-btn-4" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasDeseos" aria-controls="offcanvasWithBothOptions"><i
+                                class="bi bi-heart-fill"></i></button>
+
+                        <button class="btn custom-btn-4" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasCarrito" aria-controls="offcanvasWithBothOptions"><i
+                                class="bi bi-cart-fill"></i></button>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -53,6 +58,228 @@
             </div>
         </header>
     </section>
+    
+    <!-- Offcanvas CARRITO -->
+    <div class="offcanvas offcanvas-end custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasCarrito"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <div class="inline-flex text-xl font-bold p-2 items-center space-x-3 custom-cart-title"> <span>CARRITO DE
+                    COMPRAS</span></div>
+        </div>
+        <div class="offcanvas-body">
+            <table class="table custom-table">
+                <thead>
+                    <tr class="h-10 uppercase text-left">
+                        <th class="custom-th"></th>
+                        <th class="custom-th">Producto</th>
+                        <th class="custom-th">Cant.</th>
+                        <th class="custom-th pl-2">Total</th>
+                        <th class="custom-th"></th>
+                    </tr>
+                </thead>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPhoneBlue.png" class="w-10 h-10 rounded object-cover"
+                                    alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPhone Limitless </div>
+                            </a>
+                        </td>
+                        <td class="pb-3">
+                            <div class="custom-w-11">
+                                <div class="relative flex flex-row w-full h-8">
+                                    <input type="number" value="1"
+                                        class="form-control font-semibold text-center text-gray-700 bg-gray-200" />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 13,499.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-danger"><i
+                                    class="bi bi-x-lg"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPods.png" class="w-10 h-10 rounded object-cover" alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPods Void </div>
+                            </a>
+                        </td>
+                        <td class="pb-3">
+                            <div class="custom-w-11">
+                                <div class="relative flex flex-row w-full h-8">
+                                    <input type="number" value="1"
+                                        class="form-control font-semibold text-center text-gray-700 bg-gray-200" />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 1,399.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-danger"><i
+                                    class="bi bi-x-lg"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPadBlack.png" class="w-10 h-10 rounded object-cover" alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPad 5ta Generación </div>
+                            </a>
+                        </td>
+                        <td class="pb-3">
+                            <div class="custom-w-11">
+                                <div class="relative flex flex-row w-full h-8">
+                                    <input type="number" value="1"
+                                        class="form-control font-semibold text-center text-gray-700 bg-gray-200" />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 19,999.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-danger"><i
+                                    class="bi bi-x-lg"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="buttom custom-buttom">
+                <div class="pt-3">
+                    <div class="text-sm">
+                        <div class="custom-details-header">
+                            <div class="ml-2 font-bold uppercase">Detalles de Orden</div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-gray-800 custom-total">
+                                    Subtotal $34,899.97
+                                </div>
+                            </div>
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-success  custom-total">
+                                    Envío $0.00
+                                </div>
+                            </div>
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-danger text-decoration-line-through custom-total">
+                                    Servicio $20.00
+                                </div>
+                            </div>
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-gray-800 custom-total">
+                                    Total <strong>$34,899.97</strong>
+                                </div>
+                            </div>
+                            <hr>
+                            <button class="btn btn-outline-dark custom-btn-outline-dark custom-btn-5">
+                                <span class="ml-3  mt-5px">IR A PAGAR ></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Offcanvas DESEOS-->
+    <div class="offcanvas offcanvas-end custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasDeseos"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <div class="inline-flex text-xl font-bold p-2 text-center space-x-3 custom-cart-title">
+                <span>LISTA DE DESEOS</span>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <table class="table custom-table">
+                <thead>
+                    <tr class="h-10 uppercase text-left">
+                        <th class="custom-th"></th>
+                        <th class="custom-th">Producto</th>
+                        <th class="custom-th pl-2">Total</th>
+                        <th class="custom-th"></th>
+                    </tr>
+                </thead>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPhoneSilver.png" class="w-10 h-10 rounded object-cover"
+                                    alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPhone Moonlit </div>
+                            </a>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 13,499.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-success"><i
+                                    class="bi bi-cart-fill"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPhoneBlue.png" class="w-10 h-10 rounded object-cover"
+                                    alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPhone Limitless </div>
+                            </a>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 13,499.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-success"><i
+                                    class="bi bi-cart-fill"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+            </table>
+        </div>
+    </div>
+
     <!--FIN HEADER-->
     <br>
     <br>
@@ -151,7 +378,8 @@
                                         <p class="paragraph">
                                             En Pera, creemos que la verdadera inteligencia va más allá de lo artificial.
                                             Así como cada persona sueña con un mundo de innovaciones, nosotros
-                                            trabajamos para mejorar, superar y lograr esto, buscando la perfección en nuestra
+                                            trabajamos para mejorar, superar y lograr esto, buscando la perfección en
+                                            nuestra
                                             tecnología.
                                         </p>
                                     </div>

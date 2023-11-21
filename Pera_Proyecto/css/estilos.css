@@ -1123,6 +1123,9 @@ article {
   font-weight: 700;
   font-size: x-large;
   width: 40px;
+  padding-right: 45px;
+  padding-left: 0;
+
 }
 
 /* Modal Title */
@@ -2692,19 +2695,122 @@ a.continue:hover {
 
 /*----------OFFCANVAS CARRITO------------------------------------------------------------------------*/
 
-.acart {
-  max-width: 400px;
+
+.custom-offcanvas {
+  max-width: 100%;
 }
 
-.acart-pname {
+
+.custom-cart-title {
+  font-size: 24px; 
+  font-weight: 700; 
+  color: #333; 
+  font-family: 'Handjet', sans-serif;
+}
+
+
+.custom-offcanvas img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.custom-acart-pname {
   max-width: 150px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
 
+.custom-buttom {
+  max-height: 400px;
+}
+
+.custom-table {
+  table-layout: fixed;
+  overflow-y: auto;
+  font-family: 'Tomorrow', sans-serif; 
+}
+
+.custom-th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-tbody {
+  max-height: 200px;
+}
+
+
+.custom-btn-5 {
+  border-width: 2px;
+  border-radius: 10px;
+  font-family: 'Handjet', sans-serif;
+  font-weight: 700;
+  font-size: 0.3rem;
+  width: 300px;
+  height: auto;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 9px;
+  font-size: 12px;
+  color: #333;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.custom-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-table a {
+  color: #4400ff;
+  text-decoration: none;
+}
+
+.custom-table a:hover {
+  text-decoration: underline;
+}
+
+.custom-table img {
+  max-width: 50px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.custom-table .custom-acart-pname {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-table .custom-price {
+  font-size: 12px; 
+  font-family: 'Tomorrow', sans-serif; 
+  color: #555;
+}
+
+.custom-details-header {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'VT323', sans-serif; 
+}
+
+.custom-total {
+  font-size: 14px; 
+  font-family: 'Tomorrow', sans-serif; 
+  color: #555;
+  text-align: right;
+}
 
 /*----------INICIO FOOTER------------------------------------------------------------------------*/
 

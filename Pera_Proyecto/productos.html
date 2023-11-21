@@ -28,11 +28,11 @@
                     <a class="navbar-brand" href="index.html"><img src="imag/drop.svg" class="logo" alt="pera"></a>
                     <div class="order-md-last iconos">
                         <button class="btn custom-btn-4" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                            data-bs-target="#offcanvasDeseos" aria-controls="offcanvasWithBothOptions"><i
                                 class="bi bi-heart-fill"></i></button>
 
                         <button class="btn custom-btn-4" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                            data-bs-target="#offcanvasCarrito" aria-controls="offcanvasWithBothOptions"><i
                                 class="bi bi-cart-fill"></i></button>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,34 +50,232 @@
                     </div>
                 </div>
             </nav>
-            <div
-                class="anuncio">
+            <div class="anuncio">
                 ¡Suscríbete y obtén un 20% de descuento en tu primer compra!
             </div>
         </header>
     </section>
-    <!--Offcanvas CARRITO-->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+
+    <!-- Offcanvas CARRITO -->
+    <div class="offcanvas offcanvas-end custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasCarrito"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <div class="inline-flex text-xl font-bold p-2 items-center space-x-3 custom-cart-title"> <span>CARRITO DE
+                    COMPRAS</span></div>
         </div>
         <div class="offcanvas-body">
-            <p>Try scrolling the rest of the page to see this option in action.</p>
+            <table class="table custom-table">
+                <thead>
+                    <tr class="h-10 uppercase text-left">
+                        <th class="custom-th"></th>
+                        <th class="custom-th">Producto</th>
+                        <th class="custom-th">Cant.</th>
+                        <th class="custom-th pl-2">Total</th>
+                        <th class="custom-th"></th>
+                    </tr>
+                </thead>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPhoneBlue.png" class="w-10 h-10 rounded object-cover"
+                                    alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPhone Limitless </div>
+                            </a>
+                        </td>
+                        <td class="pb-3">
+                            <div class="custom-w-11">
+                                <div class="relative flex flex-row w-full h-8">
+                                    <input type="number" value="1"
+                                        class="form-control font-semibold text-center text-gray-700 bg-gray-200" />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 13,499.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-danger"><i
+                                    class="bi bi-x-lg"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPods.png" class="w-10 h-10 rounded object-cover" alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPods Void </div>
+                            </a>
+                        </td>
+                        <td class="pb-3">
+                            <div class="custom-w-11">
+                                <div class="relative flex flex-row w-full h-8">
+                                    <input type="number" value="1"
+                                        class="form-control font-semibold text-center text-gray-700 bg-gray-200" />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 1,399.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-danger"><i
+                                    class="bi bi-x-lg"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPadBlack.png" class="w-10 h-10 rounded object-cover" alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPad 5ta Generación </div>
+                            </a>
+                        </td>
+                        <td class="pb-3">
+                            <div class="custom-w-11">
+                                <div class="relative flex flex-row w-full h-8">
+                                    <input type="number" value="1"
+                                        class="form-control font-semibold text-center text-gray-700 bg-gray-200" />
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 19,999.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-danger"><i
+                                    class="bi bi-x-lg"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="buttom custom-buttom">
+                <div class="pt-3">
+                    <div class="text-sm">
+                        <div class="custom-details-header">
+                            <div class="ml-2 font-bold uppercase">Detalles de Orden</div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-gray-800 custom-total">
+                                    Subtotal $34,899.97
+                                </div>
+                            </div>
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-success  custom-total">
+                                    Envío $0.00
+                                </div>
+                            </div>
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-danger text-decoration-line-through custom-total">
+                                    Servicio $20.00
+                                </div>
+                            </div>
+                            <div class="flex justify-between font-bold border-b">
+                                <div class="m-2 text-gray-800 custom-total">
+                                    Total <strong>$34,899.97</strong>
+                                </div>
+                            </div>
+                            <hr>
+                            <button class="btn btn-outline-dark custom-btn-outline-dark custom-btn-5">
+                                <span class="ml-3  mt-5px">IR A PAGAR ></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
     <!--Offcanvas DESEOS-->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    <div class="offcanvas offcanvas-end custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasDeseos"
         aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            <div class="inline-flex text-xl font-bold p-2 text-center space-x-3 custom-cart-title">
+                <span>LISTA DE DESEOS</span></div>
         </div>
         <div class="offcanvas-body">
-            <p>Try scrolling the rest of the page to see this option in action.</p>
+            <table class="table custom-table">
+                <thead>
+                    <tr class="h-10 uppercase text-left">
+                        <th class="custom-th"></th>
+                        <th class="custom-th">Producto</th>
+                        <th class="custom-th pl-2">Total</th>
+                        <th class="custom-th"></th>
+                    </tr>
+                </thead>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPhoneSilver.png" class="w-10 h-10 rounded object-cover"
+                                    alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPhone Moonlit </div>
+                            </a>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 13,499.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-success"><i
+                                    class="bi bi-cart-fill"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+                <tbody class="custom-tbody">
+                    <tr>
+                        <td class="pb-3">
+                            <a href="productos.html">
+                                <img src="imag/PeraPhoneBlue.png" class="w-10 h-10 rounded object-cover"
+                                    alt="Thumbnail">
+                            </a>
+                        </td>
+                        <td class="pl-1 pr-1 pb-3">
+                            <a href="productos.html">
+                                <div class="custom-acart-pname"> PeraPhone Limitless </div>
+                            </a>
+                        </td>
+                        <td class="pl-2 pb-3">
+                            <span class="whitespace-nowrap custom-price">
+                                $ 13,499.99
+                            </span>
+                        </td>
+                        <td class="text-center pl-2 pb-3"><button class="btn btn-md btn-success"><i
+                                    class="bi bi-cart-fill"></i></button></td>
+                    </tr>
+                </tbody>
+                <hr>
+            </table>
         </div>
     </div>
+
     <!--FIN HEADER-->
     <br>
 
@@ -224,17 +422,18 @@
                         <li class='tab'>
                             <article class='tab-content'>
                                 <h3>Procesador Pera</h3>
-                                <p>Este proyecto, actualmente en curso, representa un hito significativo en la evolución
+                                <p>Este proyecto, actualmente en curso, representa un hito significativo en la
+                                    evolución
                                     de la potencia de
-                                    procesamiento y la eficiencia energética. Con un compromiso inquebrantable con la
+                                    procesamiento y la eficiencia energética. Con un compromiso inquebrantable con
+                                    la
                                     excelencia, Pera
                                     busca impulsar los límites de la computación,
                                     prometiendo mejoras sustanciales en el rendimiento y vislumbrando el futuro
                                     tecnológico.</p>
                                 <button>LEER MÁS ></button>
                             </article>
-                            <div class='tab-image'><img
-                                    src='/imag/procesador.png'>
+                            <div class='tab-image'><img src='/imag/procesador.png'>
                             </div>
                         </li>
                         <li class='tab'>
@@ -247,7 +446,8 @@
                                     para mejorar la calidad de vida, marcando un hito en la interacción entre la
                                     humanidad y la tecnología.
                                     Un emocionante viaje hacia un futuro
-                                    donde la convergencia de prótesis e inteligencia artificial redefine los límites de
+                                    donde la convergencia de prótesis e inteligencia artificial redefine los límites
+                                    de
                                     la innovación.</p>
                                 <button>LEER MÁS ></button>
                             </article>
@@ -259,7 +459,8 @@
                             <article class='tab-content'>
                                 <h3>Pera en tu Escritorio</h3>
                                 <p>Pera está inmersa en un emocionante proyecto para crear productos de
-                                    escritorio (PC), buscando redefinir la experiencia de computación personal. Desde el
+                                    escritorio (PC), buscando redefinir la experiencia de computación personal.
+                                    Desde el
                                     rendimiento
                                     excepcional hasta el diseño meticuloso, este proyecto refleja nuestro
                                     compromiso con la excelencia tecnológica, anticipando una revolución en la
@@ -275,10 +476,12 @@
                             <article class='tab-content'>
                                 <h3>PeraAir: Drones</h3>
                                 <p> Pera se aventura
-                                    en la implementación y diseño de drones vanguardistas. Este esfuerzo no solo subraya
+                                    en la implementación y diseño de drones vanguardistas. Este esfuerzo no solo
+                                    subraya
                                     nuestro compromiso
                                     con la innovación tecnológica, sino que también anticipa una transformación
-                                    en la manera en que nos conectamos con el entorno, señalando una revolución en la
+                                    en la manera en que nos conectamos con el entorno, señalando una revolución en
+                                    la
                                     tecnología aérea.
                                 </p>
                                 <button>LEER MÁS ></button>
