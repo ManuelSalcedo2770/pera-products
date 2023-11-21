@@ -27,8 +27,13 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="imag/drop.svg" class="logo" alt="pera"></a>
                     <div class="order-md-last iconos">
-                        <i class="bi bi-heart-fill" href="deseos.html"></i>
-                        <i class="bi bi-cart-fill" href="carrito.html"></i>
+                        <button class="btn custom-btn-4" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                                class="bi bi-heart-fill"></i></button>
+
+                        <button class="btn custom-btn-4" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                                class="bi bi-cart-fill"></i></button>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -46,11 +51,33 @@
                 </div>
             </nav>
             <div
-                class="text-zinc-900 text-base relative mb-0 max-w-[534px] self-end max-md:max-w-full max-md:mr-1.5 max-md:mb-2.5 anuncio">
+                class="anuncio">
                 ¡Suscríbete y obtén un 20% de descuento en tu primer compra!
             </div>
         </header>
     </section>
+    <!--Offcanvas CARRITO-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+    <!--Offcanvas DESEOS-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
     <!--FIN HEADER-->
     <br>
 
@@ -65,6 +92,7 @@
                 </div>
             </div>
         </section>
+
         <br>
         <br>
         <!--======================CONTENIDO==========================-->
@@ -275,8 +303,10 @@
                         Este producto se agregó a tu Lista de Deseos exitosamente.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary custom-btn" data-bs-dismiss="modal">CERRAR</button>
-                        <button type="button" href="deseos.html" class="btn btn-outline-dark custom-btn">IR A WISHLIST</button>
+                        <button type="button" class="btn btn-secondary custom-btn"
+                            data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" href="deseos.html" class="btn btn-outline-dark custom-btn">IR A
+                            WISHLIST</button>
                     </div>
                 </div>
             </div>
@@ -294,8 +324,10 @@
                         Este producto se agregó a tu Carrito exitosamente.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary custom-btn" data-bs-dismiss="modal">CERRAR</button>
-                        <button type="button" href="carrito.html" class="btn btn-outline-dark custom-btn">IR A CARRITO</button>
+                        <button type="button" class="btn btn-secondary custom-btn"
+                            data-bs-dismiss="modal">CERRAR</button>
+                        <button type="button" href="carrito.html" class="btn btn-outline-dark custom-btn">IR A
+                            CARRITO</button>
                     </div>
                 </div>
             </div>

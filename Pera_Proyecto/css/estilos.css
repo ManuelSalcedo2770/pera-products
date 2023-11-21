@@ -1116,6 +1116,15 @@ article {
   width: 150px;
 }
 
+.custom-btn-4 {
+  border-width: 2px;
+  border-radius: 10px;
+  font-family: 'Handjet', sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+  width: 40px;
+}
+
 /* Modal Title */
 .modal-title {
   font-size: 30px;
@@ -2683,6 +2692,23 @@ a.continue:hover {
   background: #993333;
 }
 
+/*----------FIN DESEOS------------------------------------------------------------------------*/
+
+
+/*----------OFFCANVAS CARRITO------------------------------------------------------------------------*/
+
+.acart {
+  max-width: 400px;
+}
+
+.acart-pname {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
 
 /*----------INICIO FOOTER------------------------------------------------------------------------*/
