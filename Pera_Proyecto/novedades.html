@@ -13,7 +13,9 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- ctrl+corchete de cierre    BOOTSTRAP -->
     <link rel="stylesheet" href="css/estilos.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Include TweenMax from GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <!--FUENTES-->
     <link href="https://fonts.googleapis.com/css?family=Handjet&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet" />
@@ -101,7 +103,7 @@
                             </div>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 13,499.99
                             </span>
                         </td>
@@ -131,7 +133,7 @@
                             </div>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 1,399.99
                             </span>
                         </td>
@@ -161,7 +163,7 @@
                             </div>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 19,999.99
                             </span>
                         </td>
@@ -244,7 +246,7 @@
                             </a>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 13,499.99
                             </span>
                         </td>
@@ -267,7 +269,7 @@
                             </a>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 13,499.99
                             </span>
                         </td>
@@ -288,13 +290,13 @@
         <br>
         <div class="header-text">>>>>>>>>>>>>> LO NUEVO EN PERA</div>
         <br>
-        <!-- Page Wrap -->
+        <!-- Page carrito -->
         <div class="swiper">
-            <div class="page-wrap">
+            <div class="page-carrito">
 
                 <div id="home-slider">
                     <div class="swiper-container">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-carritoper">
                             <div class="swiper-slide swiper-slide-one">
                                 <div class="swiper-image" data-swiper-parallax-y="-20%">
                                     <div class="swiper-image-inner swiper-image-left swiper-image-one">
@@ -362,63 +364,84 @@
         <div id="parallax-world-of-ugg">
             <section>
                 <div class="title">
-                    <h3>Let's do some <strong>ccccccc</strong></h3>
+                    <h3>SEDE <strong>PERA</strong></h3>
                 </div>
             </section>
 
             <section>
                 <div class="parallax-one">
-                    <h2>EVOLUCIÓN CULINARIA</h2>
+                    <h2>PERA EN SILICON VALLEY</h2>
                 </div>
             </section>
 
             <section>
                 <div class="block">
-                    <p><span class="first-character sc">A</span>dentrarse en el mundo culinario de Nueva York no es
-                        tarea fácil. Sin embargo, a principios de los años 2000, una transformación similar ocurrió en
-                        la escena gastronómica. El auge de platos antes relegados a la simple comida cotidiana comenzó a
-                        conquistar paladares exigentes. La evolución de la comida callejera, de ser simplemente una
-                        opción rápida, a convertirse en una experiencia gourmet, fue rápida. Gran parte de este cambio
-                        se debió a un esfuerzo de reposicionamiento de marcas, convirtiendo los alimentos callejeros en
-                        una expresión de lujo culinario. Así, los puestos callejeros se volvieron lugares codiciados en
-                        eventos gastronómicos y sus creaciones, ahora consideradas un símbolo de estilo culinario, eran
-                        presentadas en revistas especializadas como Bon Appétit y Food & Wine.</p>
+                    <p><span class="first-character sc">S</span>umergirse en el vibrante escenario tecnológico de
+                        Silicon Valley presenta sus desafíos. Sin embargo, a principios de la última década, se gestó
+                        una transformación notable en el tejido empresarial de la región. Empresas que anteriormente
+                        eran simplemente consideradas como start-ups comenzaron a captar la atención de inversores y
+                        consumidores con altas exigencias. La metamorfosis de estas compañías, de ser opciones
+                        emergentes, a convertirse en líderes innovadores, se produjo de manera veloz. Este cambio
+                        significativo se atribuyó en gran medida a un esfuerzo por reposicionar las marcas, convirtiendo
+                        a las empresas emergentes en manifestaciones de innovación tecnológica.</p>
                     <p class="line-break margin-top-10"></p>
-                    <p class="margin-top-10">Influenciados por chefs de renombre que adoptaban la cocina callejera como
-                        su nueva pasión, una nueva era gastronómica se abría camino. El deseo por experiencias
-                        culinarias únicas y auténticas se extendía por todo el mundo, y los alimentos callejeros se
-                        alineaban perfectamente con este movimiento. Al igual que UGG en el mundo de la moda, los
-                        platillos antes considerados simples estaban siendo aclamados como símbolos de un estilo de vida
-                        elegante y relajado.</p>
+                    <p class="margin-top-10"> La presencia de nuestra compañía en Silicon Valley no solo fortalece
+                        nuestra credibilidad al situarnos en el corazón de la innovación tecnológica, sino que también
+                        nos coloca en una posición óptima para alcanzar nuestras grandes aspiraciones de ser líderes en
+                        el campo. La influencia positiva de esta ubicación estratégica contribuirá significativamente a
+                        nuestro camino hacia la excelencia y el reconocimiento en la industria tecnológica.
+                    </p>
                 </div>
             </section>
             <section>
                 <div class="parallax-two">
-                    <h2>LA REVOLUCIÓN DE LA COCINA URBANA</h2>
+                    <h2>IMPACTO MUNDIAL</h2>
                 </div>
             </section>
 
             <section>
                 <div class="block">
-                    <p><span class="first-character ny">E</span>ntrar en la escena culinaria de Nueva York es un desafío
-                        formidable. Sin embargo, a principios de los años 2000, una revolución gastronómica comenzó a
-                        gestarse en las calles de la Gran Manzana. La evolución de la comida callejera, de simples
-                        bocados a una experiencia culinaria de alta gama, fue meteórica. Gran parte de este cambio se
-                        atribuye a un esfuerzo de rebranding que convirtió los carritos de comida en símbolos de lujo
-                        gastronómico. Ahora, estos locales no solo eran un rincón para satisfacer el hambre, sino
-                        destinos codiciados en eventos gastronómicos y protagonistas en reseñas de revistas
-                        especializadas como Saveur y Gourmet.
+                    <p><span class="first-character ny">C</span>omo empresa de tecnología, nuestra preocupación por el
+                        impacto en el mundo va más allá de simplemente ofrecer productos innovadores. Desde su
+                        concepción, nuestra empresa se ha comprometido a mejorar la calidad de vida de las personas,
+                        tanto en términos ambientales como en el bienestar mental. Esta visión fundamental se refleja en
+                        varios aspectos clave de nuestra filosofía y prácticas empresariales. En cuanto al impacto
+                        ambiental, nos esforzamos por adoptar prácticas sostenibles en todas las etapas de nuestra
+                        cadena de producción y operaciones. Desde la selección de materiales hasta el diseño de
+                        productos y la gestión de residuos, buscamos constantemente maneras de minimizar nuestra huella
+                        ecológica. Además, estamos comprometidos con la investigación y desarrollo de tecnologías que
+                        fomenten la sostenibilidad y la eficiencia energética.
                     </p>
                     <p class="line-break margin-top-10"></p>
-                    <p class="margin-top-10">Influenciados por chefs de renombre que abrazaban la cocina callejera con
-                        pasión, una nueva era gastronómica estaba en marcha. La demanda de experiencias culinarias
-                        auténticas se propagaba por todo el mundo, y la comida callejera se integraba perfectamente en
-                        este movimiento. Al igual que UGG en el mundo de la moda, la comida callejera se estaba elevando
-                        de la simplicidad a la sofisticación, siendo ahora considerada un símbolo de estilo gastronómico
-                        urbano y chic.
+                    <p class="margin-top-10">En lo que respecta al bienestar mental de las personas, reconocemos la
+                        importancia de la tecnología en la vida cotidiana y su impacto en la salud mental. Nos
+                        esforzamos por desarrollar productos que mejoren la experiencia de los usuarios sin generar
+                        efectos adversos. Esto implica considerar cuidadosamente el diseño de interfaces, la
+                        accesibilidad y la privacidad para crear productos que enriquezcan la vida de las personas sin
+                        comprometer su bienestar emocional.
+                        <br> <br>
+                        Además, como parte de nuestro compromiso con el impacto social positivo, estamos involucrados en
+                        iniciativas comunitarias y programas que utilizan la tecnología para abordar desafíos globales.
+                        Colaboramos con organizaciones sin fines de lucro y otras empresas para encontrar soluciones
+                        innovadoras que tengan un impacto positivo en la sociedad.
                     </p>
                 </div>
             </section>
+        </div>
+        <div class="que-hola">
+            <div class="boarding-pass" style="background-image: url('')">
+                <div class="boarding-pass" id="hoverTarget">
+                    <div class="overlay"></div>
+                    <div class="travel-details">
+                        <h3><strong>LANZAMIENTO VIRTUAL PERAPHONE SKY:</strong><br>
+                            Descubre la Innovación<br>15/01/24 11:00 EST</h3>
+                        <div class="flight-locations">
+                            <h1>Conoce más ></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -523,7 +546,96 @@
                 invert: false, // Puedes ajustar esto según tus necesidades
             }
         });
+    </script>
+    <div id="hoverTarget"></div>
+    <script>
+        var vertex = `
+    varying vec2 vUv;
+    void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    }
+`;
+        var fragment = `
+    varying vec2 vUv;
+    uniform sampler2D texture1;
+    uniform sampler2D texture2;
+    uniform sampler2D disp;
+    uniform float dispFactor;
+    uniform float intensity1;
+    uniform float intensity2;
+    uniform float angle1;
+    uniform float angle2;
 
+    vec2 rotate(vec2 v, float a) {
+        float s = sin(a);
+        float c = cos(a);
+        mat2 m = mat2(c, -s, s, c);
+        return m * v;
+    }
+
+    void main() {
+        vec4 disp = texture2D(disp, vUv);
+        vec2 dispVec = vec2(disp.r, disp.g) * 2.0 - 1.0;
+        vec2 distPos1 = vUv + rotate(dispVec, angle1) * intensity1 * dispFactor;
+        vec2 distPos2 = vUv + rotate(dispVec, angle2) * intensity2 * (1.0 - dispFactor);
+        gl_FragColor = mix(texture2D(texture1, distPos1), texture2D(texture2, distPos2), dispFactor);
+    }
+`;
+        var parent = document.getElementById('hoverTarget');
+
+        var scene = new THREE.Scene();
+        var camera = new THREE.OrthographicCamera(parent.offsetWidth / -2, parent.offsetWidth / 2, parent.offsetHeight / 2, parent.offsetHeight / -2, 1, 1000);
+        var renderer = new THREE.WebGLRenderer({ antialias: false });
+
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(parent.offsetWidth, parent.offsetHeight);
+        parent.appendChild(renderer.domElement);
+
+        var loader = new THREE.TextureLoader();
+        loader.setCrossOrigin(''); // Handling CORS
+        var texture1 = loader.load('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        var texture2 = loader.load('https://images.unsplash.com/39/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        var dispTexture = loader.load('https://images.pexels.com/photos/1097203/pexels-photo-1097203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260?raw=true');
+
+        var uniforms = {
+            "texture1": { type: "t", value: texture1 },
+            "texture2": { type: "t", value: texture2 },
+            "disp": { type: "t", value: dispTexture },
+            "dispFactor": { type: "f", value: 0.0 },
+            "intensity1": { type: "f", value: 0.2 },
+            "intensity2": { type: "f", value: 0.1 },
+            "angle1": { type: "f", value: Math.PI / 4 },
+            "angle2": { type: "f", value: -Math.PI / 4 }
+        };
+
+        var material = new THREE.ShaderMaterial({
+            uniforms: uniforms,
+            vertexShader: vertex,
+            fragmentShader: fragment,
+            transparent: true,
+            opacity: 1.0
+        });
+
+        var geometry = new THREE.PlaneBufferGeometry(parent.offsetWidth, parent.offsetHeight);
+        var mesh = new THREE.Mesh(geometry, material);
+
+        scene.add(mesh);
+        camera.position.z = 1;
+
+        var render = function () {
+            requestAnimationFrame(render);
+            renderer.render(scene, camera);
+        };
+        render();
+
+        parent.addEventListener("mouseenter", function () {
+            gsap.to(uniforms.dispFactor, { duration: 1, value: 1 });
+        });
+
+        parent.addEventListener("mouseleave", function () {
+            gsap.to(uniforms.dispFactor, { duration: 1, value: 0 });
+        });
     </script>
 
 

@@ -50,13 +50,12 @@
                     </div>
                 </div>
             </nav>
-            <div
-                class="anuncio">
+            <div class="anuncio">
                 ¡Suscríbete y obtén un 20% de descuento en tu primer compra!
             </div>
         </header>
     </section>
-    
+
     <!-- Offcanvas CARRITO -->
     <div class="offcanvas offcanvas-end custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasCarrito"
         aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -99,7 +98,7 @@
                             </div>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 13,499.99
                             </span>
                         </td>
@@ -129,7 +128,7 @@
                             </div>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 1,399.99
                             </span>
                         </td>
@@ -159,7 +158,7 @@
                             </div>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 19,999.99
                             </span>
                         </td>
@@ -215,7 +214,8 @@
             <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             <div class="inline-flex text-xl font-bold p-2 text-center space-x-3 custom-cart-title">
-                <span>LISTA DE DESEOS</span></div>
+                <span>LISTA DE DESEOS</span>
+            </div>
         </div>
         <div class="offcanvas-body">
             <table class="table custom-table">
@@ -241,7 +241,7 @@
                             </a>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 13,499.99
                             </span>
                         </td>
@@ -264,7 +264,7 @@
                             </a>
                         </td>
                         <td class="pl-2 pb-3">
-                            <span class="whitespace-nowrap custom-price">
+                            <span class="whitespace-nocarrito custom-price">
                                 $ 13,499.99
                             </span>
                         </td>
@@ -278,71 +278,110 @@
     </div>
 
     <!--FIN HEADER-->
-    <br>
-    
+
     <main>
-        <div class="wrap cf">
+        <div class="carrito cf">
             <div class="projTitle-carrito">PERA<span> EN </span> TUS MANOS</div>
             <div class="heading-carrito cf">
                 <div class="projTitle-carrito-2">MI CARRITO</div>
-                <a type="button" href="productos.html" class="continue btn btn-outline-dark">CONTINUA COMPRANDO</a>
+                <a type="button" href="productos.html" class="boton btn btn-outline-dark">CONTINUA COMPRANDO</a>
             </div>
-            <div class="cart-carrito">
-                <ul class="cartWrap">
+            <div class="cart-custom">
+                <!--    <ul class="tableHead">
+            <li class="prodHeader">Product</li>
+            <li>Quantity</li>
+            <li>Total</li>
+             <li>Remove</li>
+          </ul>-->
+                <ul class="cartcarrito">
                     <li class="items odd">
-                        <div class="infoWrap">
+                        <div class="infocarrito">
                             <div class="cartSection">
                                 <img src="imag/PeraPadBlack.png" alt="" class="itemImg" />
-                                <p class="itemNumber">#PERAPAD5GEN</p>
-                                <h3>PeraPad 5ta Generación</h3>
+                                <p class="itemNumber">#PERAPAD-5GEN</p>
+                                <div class="producto-carrito">PeraPad 5ta Generación</div>
                                 <p> <input type="text" class="qty" placeholder="1" /> x $19,999.99</p>
-                                <p class="stockStatus"> In Stock</p>
+                                <p class="stockStatus"> DISPONIBLE</p>
                             </div>
                             <div class="prodTotal cartSection">
-                                <p>$19999.99</p>
+                                <p>$19,999.99</p>
                             </div>
-                            <div class="cartSection removeWrap">
+                            <div class="cartSection removecarrito">
                                 <a href="#" class="remove">x</a>
                             </div>
                         </div>
                     </li>
-                    <!-- Repetir la estructura similar para los otros productos -->
                     <li class="items even">
-                        <div class="infoWrap">
+                        <div class="infocarrito">
                             <div class="cartSection">
                                 <img src="imag/PeraPhoneBlue.png" alt="" class="itemImg" />
-                                <p class="itemNumber">#PERAPHONELIMITLESS</p>
-                                <h3>PeraPhone Limitless</h3>
+                                <p class="itemNumber">#PERAPHONE-LIMITLESS</p>
+                                <div class="producto-carrito">PeraPhone Limitless</div>
                                 <p> <input type="text" class="qty" placeholder="1" /> x $13,499.99</p>
-                                <p class="stockStatus"> In Stock</p>
+                                <p class="stockStatus"> DISPONIBLE</p>
                             </div>
                             <div class="prodTotal cartSection">
-                                <p>$13499.99</p>
+                                <p>$13,499.99</p>
                             </div>
-                            <div class="cartSection removeWrap">
+                            <div class="cartSection removecarrito">
                                 <a href="#" class="remove">x</a>
                             </div>
                         </div>
                     </li>
+                    <li class="items odd">
+                        <div class="infocarrito">
+                            <div class="cartSection">
+                                <img src="imag/PeraPhoneSilver.png" alt="" class="itemImg" />
+                                <p class="itemNumber">#PERAPHONE-MOONLIT</p>
+                                <div class="producto-carrito">PeraPhone Moonlit</div>
+                                <p> <input type="text" class="qty" placeholder="1" /> x $13,499.99</p>
+                                <p class="stockStatus"> DISPONIBLE</p>
+                            </div>
+                            <div class="prodTotal cartSection">
+                                <p>$13,499.99</p>
+                            </div>
+                            <div class="cartSection removecarrito">
+                                <a href="#" class="remove">x</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items even">
+                        <div class="infocarrito">
+                            <div class="cartSection">
+                                <img src="imag/PeraPods.png" alt="" class="itemImg" />
+                                <p class="itemNumber">#PERAPODS-VOID</p>
+                                <div class="producto-carrito">PeraPods Void</div>
+                                <p> <input type="text" class="qty" placeholder="1" /> x $1,399.99</p>
+                                <p class="stockStatus"> DISPONIBLE</p>
+                            </div>
+                            <div class="prodTotal cartSection">
+                                <p>$1,399.99</p>
+                            </div>
+                            <div class="cartSection removecarrito">
+                                <a href="#" class="remove">x</a>
+                            </div>
+                        </div>
+                        <div class="special">
+                            <div class="specialContent">¡PeraPods Void gratis en la compra de un PeraPhone!</div>
+                        </div>
+                    </li>
+                    <!--<li class="items even">Item 2</li>-->
                 </ul>
             </div>
-            <div class="promoCode">
-                <label for="promo">¿Tienes código de promoción?</label>
-                <input type="text" name="promo" placeholder="Introduce código" />
-                <a class="btn btn-outline-dark custom-btn"><i class="bi bi-caret-right-fill"></i></a>
+            <div class="promoCode"><label for="promo">INGRESA TU CÓDIGO DE PROMOCIÓN:</label><input type="text"
+                    name="promo" placholder="Enter Code" />
+                <a href="#" class="boton btn btn-outline-dark"></a>
             </div>
             <div class="subtotal cf">
                 <ul>
-                    <li class="totalRow"><span class="label">Subtotal</span><span class="value">$39,800.88</span></li>
-                    <li class="totalRow"><span class="label">Envío</span><span class="value">$0.00</span></li>
-                    <li class="totalRow"><span class="label">Servicio</span><span class="value">$20.00</span></li>
-                    <li class="totalRow final"><span class="label">Total</span><span class="value">$39,820.88</span>
-                    </li>
-                    <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+                    <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+                    <li class="totalRow"><span class="label">Envío</span><span class="value">$5.00</span></li>
+                    <li class="totalRow"><span class="label">Servicio</span><span class="value">$4.00</span></li>
+                    <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
+                    <li class="totalRow"><a href="#" class="boton btn btn-outline-dark continue">PAGAR</a></li>
                 </ul>
             </div>
         </div>
-    </main>
 
         <!--INICIO FOOTER-->
         <footer class="site-footer">
@@ -357,7 +396,7 @@
                         <ul> PeraEar </ul>
                         </p>
                     </div>
-    
+
                     <div class="col-xs-6 col-md-4">
                         <h6>FORMAS DE PAGO</h6>
                         <ul class="footer-links">
@@ -366,11 +405,13 @@
                             <li><a href="http://scanfcode.com/category/back-end-development/">AMEX</a></li>
                         </ul>
                     </div>
-    
+
                     <div class="col-xs-6 col-md-4">
                         <h6>SUSCRÍBETE A PERA</h6>
                         <ul class="footer-links">
-                            <li><a href="http://scanfcode.com/about/">Únete a nuestra comunidad y descubre las novedades de Pera con anticipación.</a></li>
+                            <li><a href="http://scanfcode.com/about/">Únete a nuestra comunidad y descubre las novedades
+                                    de
+                                    Pera con anticipación.</a></li>
                         </ul>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control fs-4" placeholder="Escribe tu Correo"
@@ -389,7 +430,7 @@
                             <a href="#">Pera</a>.
                         </p>
                     </div>
-    
+
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <ul class="social-icons">
                             <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
@@ -401,10 +442,11 @@
                 </div>
             </div>
         </footer>
-    
-    
+
+
         <!-- Modal Suscripcion -->
-        <div class="modal fade" id="modalSuscripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalSuscripcion" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -415,30 +457,33 @@
                         Te damos la bienvenida a nuestra comunidad, tu suscripción ha sido exitosa.
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-dark custom-btn" data-bs-dismiss="modal">ENTENDIDO</button>
+                        <button type="button" class="btn btn-outline-dark custom-btn"
+                            data-bs-dismiss="modal">ENTENDIDO</button>
                     </div>
                 </div>
             </div>
         </div>
-    
+
         <!--FIN FOOTER-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script>
-        // Remove Items From Cart
-        $('a.remove').click(function () {
-            event.preventDefault();
-            $(this).parent().parent().parent().hide(400);
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Remove Items From Cart
+                $('a.remove').click(function (event) {
+                    event.preventDefault();
+                    $(this).parent().parent().parent().hide(400);
+                });
 
-        })
-
-        // Just for testing, show all items
-        $('a.btn.continue').click(function () {
-            $('li.items').show(400);
-        })
-    </script>
+                // Just for testing, show all items
+                $('a.btn.continue').click(function () {
+                    $('li.items').show(400);
+                });
+            });
+        </script>
 
 </body>
 
