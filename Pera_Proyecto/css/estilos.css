@@ -1183,7 +1183,7 @@ General Styles
 
 
 
-.page-carrito {
+.page-wrap {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -1432,7 +1432,7 @@ span.emphasis {
   float: left;
 }
 
-.swiper-container-vertical>.swiper-carritoper {
+.swiper-container-vertical>.swiper-wrapper {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -ms-flex-direction: column;
@@ -1440,7 +1440,7 @@ span.emphasis {
   flex-direction: column;
 }
 
-.swiper-carritoper {
+.swiper-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1461,7 +1461,7 @@ span.emphasis {
 }
 
 .swiper-container-android .swiper-slide,
-.swiper-carritoper {
+.swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
   -moz-transform: translate3d(0px, 0, 0);
   -o-transform: translate(0px, 0px);
@@ -1469,15 +1469,15 @@ span.emphasis {
   transform: translate3d(0px, 0, 0);
 }
 
-.swiper-container-multirow>.swiper-carritoper {
+.swiper-container-multirow>.swiper-wrapper {
   -webkit-box-lines: multiple;
   -moz-box-lines: multiple;
-  -ms-flex-carrito: carrito;
-  -webkit-flex-carrito: carrito;
-  flex-carrito: carrito;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.swiper-container-free-mode>.swiper-carritoper {
+.swiper-container-free-mode>.swiper-wrapper {
   -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
   -ms-transition-timing-function: ease-out;
@@ -1505,7 +1505,7 @@ span.emphasis {
   height: auto;
 }
 
-.swiper-container-autoheight .swiper-carritoper {
+.swiper-container-autoheight .swiper-wrapper {
   -webkit-box-align: start;
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
@@ -1745,7 +1745,7 @@ button.swiper-pagination-bullet {
   perspective: 1200px;
 }
 
-.swiper-container-3d .swiper-carritoper,
+.swiper-container-3d .swiper-wrapper,
 .swiper-container-3d .swiper-slide,
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right,
@@ -1872,8 +1872,8 @@ button.swiper-pagination-bullet {
 }
 
 /* Coverflow */
-.swiper-container-coverflow .swiper-carritoper,
-.swiper-container-flip .swiper-carritoper {
+.swiper-container-coverflow .swiper-wrapper,
+.swiper-container-flip .swiper-wrapper {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px;
 }
@@ -2102,6 +2102,7 @@ button.swiper-pagination-bullet {
 }
 
 /*----------CARROUSEL----------------------------------------------------------------------------*/
+
 
 
 /*------------------------------CARRITO----------------------------------------------------------*/
@@ -2453,7 +2454,7 @@ a.remove:hover {
   float: left;
   width: 35%;
   padding: 2%;
-  font-family: 'VT323',sans-serif;
+  font-family: 'VT323', sans-serif;
 }
 
 .promoCode label {
@@ -3280,7 +3281,8 @@ a.remove:hover {
   background: #E0E0E0;
   padding-top: 0;
   width: 820px;
-  max-width: 100%; /* Añade esta línea */
+  max-width: 100%;
+  /* Añade esta línea */
   margin: 0 auto;
   text-align: justify;
 }
@@ -3306,7 +3308,7 @@ a.remove:hover {
   font-weight: 400;
   color: #FFFFFF;
   text-align: left;
-  font-family: 'Handjet',sans-serif;
+  font-family: 'Handjet', sans-serif;
   font-size: 1.3em;
 }
 
