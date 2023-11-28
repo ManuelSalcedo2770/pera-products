@@ -545,26 +545,6 @@ card .card-title {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  .indexes li {
-    font-size: 3rem;
-    padding: 1rem;
-  }
-
-  .tab-content p{
-    font-size: 1.5rem;
-  }
-
-  .main_PRODUCTS section {
-    display: flex;
-    gap: 1.5rem;
-    width: fit-content;
-  }
-
-
-
-}
-
 .tabs {
   position: center;
   max-width: fit-content;
@@ -657,12 +637,6 @@ card .card-title {
   }
 }
 
-@media (max-width: 992px) {
-  .tab {
-    width: 50%;
-  }
-}
-
 @keyframes image {
   100% {
     opacity: 1;
@@ -673,23 +647,72 @@ card .card-title {
   }
 }
 
-@media (min-width: 100vh) {
+@media screen and (max-width: 768px) {
   .main_PRODUCTS header {
     font-size: 2.5rem;
     padding: 10px;
   }
-
-  .indexes {
-    font-size: 1.5rem;
-  }
 }
 
-@media (min-width: 100vh) {
-  .tabs {
-    font-size: 2rem;
-    padding: 10px;
+@media screen and (max-width: 768px) {
+  .indexes li {
+    font-size: 3rem;
+    padding: 1rem;
   }
+
+  .tab {
+    width: 70%;
+  }
+
+  .tab-content {
+    position: relative;
+    z-index: 5;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateY(-5rem);
+    font-family: "VT323", sans-serif;
+
+
+    & h3,
+    h2 {
+      font-family: "VT323", sans-serif;
+      font-weight: 900;
+      font-size: 3rem;
+      border-bottom: 1.5px solid black;
+      padding-bottom: 1rem;
+    }
+
+    & p {
+      font-family: "Tomorrow", sans-serif;
+      font-weight: 400;
+      color: rgba(11, 11, 11, 0.7);
+      font-size: 1.5rem;
+    }
+
+    & button {
+      width: auto;
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      font-size: 2rem;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  }
+
+  .main_PRODUCTS section {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
 }
+
 
 .active .tab {
   opacity: 1;
