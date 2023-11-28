@@ -207,7 +207,7 @@ card .card-title {
   padding: -29px 20px 84px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .container-div {
     max-width: 100%;
   }
@@ -219,7 +219,7 @@ card .card-title {
   width: 100%;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .top-div {
     max-width: 100%;
   }
@@ -230,7 +230,7 @@ card .card-title {
   display: flex;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .flex-container {
     flex-direction: column;
     align-items: stretch;
@@ -246,7 +246,7 @@ card .card-title {
   margin-left: 0;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .column-container {
     width: 100%;
   }
@@ -263,7 +263,7 @@ card .card-title {
   position: relative;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .image-container {
     max-width: 100%;
     margin-top: 13px;
@@ -288,7 +288,7 @@ card .card-title {
   font: 400 16px Tomorrow, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .text-container {
     max-width: 100%;
     margin: 0 5px 10px 0;
@@ -304,7 +304,7 @@ card .card-title {
   margin-right: 10px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .column-2-container {
     width: 100%;
   }
@@ -316,7 +316,7 @@ card .card-title {
   margin: 10px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .info-container {
     margin-top: 10px;
   }
@@ -332,7 +332,7 @@ card .card-title {
   font-size: 8rem;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px){
   .tagline {
     font-size: 40px;
     margin-top: 2px;
@@ -347,7 +347,7 @@ card .card-title {
   font: 400 80px "Handjet", sans-serif;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .title {
     font-size: 50px;
     margin-top: 30px;
@@ -362,7 +362,7 @@ card .card-title {
   font: 400 20px "Tomorrow", sans-serif;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .description {
     margin-top: 20px;
     padding-bottom: 30px;
@@ -379,7 +379,7 @@ card .card-title {
   font: 400 96px VT323, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .header-text {
     max-width: 100%;
     font-size: 40px;
@@ -398,7 +398,7 @@ card .card-title {
   font: 400 64px Handjet, sans-serif;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .product-heading {
     font-size: 40px;
     max-width: 100%;
@@ -441,7 +441,7 @@ card .card-title {
   align-items: center;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px){
   .product-carrousel {
     max-width: 100%;
   }
@@ -463,7 +463,7 @@ card .card-title {
   position: relative;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .swiper-slide-img {
     max-width: 100%;
     margin-top: 13px;
@@ -799,7 +799,7 @@ html {
   font-family: 'Handjet', sans-serif;
 }
 
-@media (max-width: 667px) {
+@media screen and (max-width: 768px) {
   .glass {
     clip-path: inset(5em);
   }
@@ -814,9 +814,9 @@ html {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .drop-shadow>span {
-    font-size: 50px;
+    font-size: 40px;
   }
 
 }
@@ -1069,7 +1069,7 @@ article {
   font-style: normal;
 }
 
-@media all and (max-width:1100px) {
+@media screen and (max-width: 768px) {
   body {
     padding: 96px 48px 24px
   }
@@ -1095,7 +1095,7 @@ article {
   }
 }
 
-@media all and (max-width:720px) {
+@media screen and (max-width: 768px){
   body {
     padding: 48px 24px 0
   }
@@ -1408,7 +1408,7 @@ span.emphasis {
   opacity: 1;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 3.9rem;
   }
@@ -1427,7 +1427,7 @@ span.emphasis {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px){
   h1 {
     font-size: 3.5rem;
   }
@@ -1441,7 +1441,7 @@ span.emphasis {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px){
   #home-slider {
     height: 86vh;
     width: 96vw;
@@ -2661,7 +2661,7 @@ a.remove:hover {
 }
 
 /* Media query for small screens */
-@media only screen and (max-width: 39.375em) {
+@media only screen and (max-width: 768px) {
   .carrito {
     width: 98%;
     padding: 2% 0;
@@ -2719,7 +2719,7 @@ a.remove:hover {
 }
 
 /* Media query for small screens */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 768px) {
   .projTitle-carrito-2 {
     font-size: 1.08em;
     padding: 10% 5%;
@@ -3051,13 +3051,13 @@ a.remove:hover {
   margin: 0
 }
 
-@media (max-width:991px) {
+@media screen and (max-width: 768px) {
   .site-footer [class^=col-] {
     margin-bottom: 30px
   }
 }
 
-@media (max-width:767px) {
+@media screen and (max-width: 768px) {
   .site-footer {
     padding-bottom: 0
   }
@@ -3133,7 +3133,7 @@ a.remove:hover {
   background-color: rgb(226, 48, 48)
 }
 
-@media (max-width:767px) {
+@media screen and (max-width: 768px){
   .social-icons li.title {
     display: block;
     margin-right: 0;
@@ -3220,7 +3220,7 @@ a.remove:hover {
 #parallax-world-of-ugg p {
   font-family: 'Tomorrow', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
 }
 
@@ -3365,7 +3365,7 @@ a.remove:hover {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #parallax-world-of-ugg .block {
     padding: 30px;
     width: 420px;
