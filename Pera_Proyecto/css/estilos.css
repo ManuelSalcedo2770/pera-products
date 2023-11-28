@@ -26,14 +26,14 @@ body {
 
 a:link,
 a:visited {
-  color: #DBF227;
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover,
 a:active,
 a.active {
-  color: #ad1a72;
+  color: rgb(255, 255, 255);
 }
 
 h1,
@@ -3356,4 +3356,26 @@ a.remove:hover {
   position: absolute;
   border-radius: 6px;
   z-index: 1;
+}
+
+@media screen and (max-width: 678px) {
+  .que-hola {
+    width: 0.2em;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 30px) {
+  .que-hola {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 30px) {
+  .que-hola . {
+    max-width: 100%;
+  }
 }
